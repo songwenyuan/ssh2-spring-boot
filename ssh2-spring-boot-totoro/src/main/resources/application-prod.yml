@@ -1,0 +1,25 @@
+server:
+  port: 8093
+spring:
+  application:
+    name: ssh2-spring-boot-totoro
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://rdsznjnqabjq7ff.mysql.rds.aliyuncs.com:3306/naruto
+    username: naruto
+    password: gwiqI3axxv8NdC8xjI1f2G1H
+# rocketMQ配置
+logging:
+  config: classpath:logback-prod.xml
+  level:
+    org.springframework: INFO
+elasticsearch:
+  cluster:
+    name: totoro-es-prod
+  ip: 172.18.238.15
+  port: 9300
+  pool: 5
+  client:
+    transport:
+      sniff: false
+qiniu_http_address: http://localhost:8099

@@ -25,6 +25,7 @@
 		<module>ganymed-spring-boot</module>
 		<module>jsch-spring-boot</module>
 		<module>ssh2-spring-boot-sample</module>
+		<module>ssh2-spring-boot-totoro</module>
 	</modules>
 
 	<build>

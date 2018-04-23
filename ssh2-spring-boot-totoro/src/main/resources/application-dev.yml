@@ -1,0 +1,20 @@
+server:
+  port: 8097
+spring:
+  application:
+    name: server-picture-handler
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    #url: jdbc:mysql://rdsznjnqabjq7ff.mysql.rds.aliyuncs.com:3306/naruto
+    url: jdbc:mysql://localhost:3307/naruto
+    username: naruto
+    password: gwiqI3axxv8NdC8xjI1f2G1H
+  ssh2:
+    proxy-host: 120.24.57.138
+    proxy-port: 22
+    proxy-user: work
+    proxy-password: satoshiandpikachu
+    dest-host: rdsznjnqabjq7ff.mysql.rds.aliyuncs.com
+    dest-port: 3306
+    local-port: 3307
+# rocketMQ配置

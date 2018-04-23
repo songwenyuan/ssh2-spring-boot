@@ -41,10 +41,10 @@ public class JschAutoConfiguration implements InitializingBean, DisposableBean {
 		session.setDaemonThread(true);
 		session.connect();
 		System.out.printf("Jsch_AutoConfiguration::: %s \n", session.getServerVersion());// 打印SSH服务器版本信息
-		int assinged_port = session.setPortForwardingL(jschProperties.getLocalPort(), jschProperties.getDestHost(),
+		/*int assinged_port = session.setPortForwardingL(jschProperties.getLocalPort(), jschProperties.getDestHost(),
 				jschProperties.getDestPort());
 		System.out.printf("Jsch_AutoConfiguration:::localhost:%d -> %s:%d \n", assinged_port,
-				jschProperties.getDestHost(), jschProperties.getDestPort());
+				jschProperties.getDestHost(), jschProperties.getDestPort());*/
 		startDetectPort();
 	}
 
